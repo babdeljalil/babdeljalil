@@ -1,0 +1,29 @@
+@import url("../public/fonts/Bagel_Fat_One/font.css");
+@import url("../public/fonts/Coming_Soon/font.css");
+@import url("../public/fonts/Nunito/font.css");
+@import url("../public/fonts/Modak/font.css");
+
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  --background: #efeeea;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-bagel: "BagelFatOne";
+  --font-comingsoon: "ComingSoon";
+  --font-nunito: "Nunito";
+  --font-modak: "modak";
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}

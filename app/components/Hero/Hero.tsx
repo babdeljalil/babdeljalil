@@ -21,7 +21,7 @@ export default function Hero() {
           alt=""
           width={500}
           height={500}
-          className="h-56 object-cover object-top"
+          className="object-cover object-top"
         />
       </div>
     </section>

@@ -7,13 +7,17 @@
 @plugin "@tailwindcss/typography";
 
 :root {
+  --primary: #171717;
+  --secondry: #efeeea;
   --background: #efeeea;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --primary: #efeeea;
+    --secondry: #171717;
+    --background: #171717;
     --foreground: #ededed;
   }
 }

@@ -14,7 +14,7 @@ export default function Hero() {
           make website for living.
         </p>
         <div className="font-nunito font-bold">
-          github | ig | linkedin | blog | projects | portfolio{" "}
+          github | ig | linkedin | blog | projects | portfolio
         </div>
       </div>
       <div className="w-1/2 max-md:w-full px-16 max-md:py-10 max-md:px-6">

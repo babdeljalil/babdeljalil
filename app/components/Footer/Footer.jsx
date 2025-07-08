@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col justify-between">
           <p className="w-[70%] text-lg font-bold max-md:my-6">
-            Hi, I’m Berhil Abdeljalil, a frontend developer from Morocco 🇲🇦. I
+            Hi, I’m Berhil Abdeljalil, a frontend developer. I
             make symphonies out of sneezing dust particles in the space between
             your blinks.
           </p>{" "}

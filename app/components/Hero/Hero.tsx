@@ -10,7 +10,7 @@ export default function Hero() {
           front-end developer
         </h1>
         <p className="text-start w-full my-3 font-comingsoon">
-          Hi, I’m Berhil Abdeljalil, an frontend developer from Morocco 🇲🇦. I
+          Hi, I’m Berhil Abdeljalil, an frontend developer. I
           make website for living.
         </p>
         <div className="font-nunito font-bold">

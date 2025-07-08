@@ -6,12 +6,11 @@ import Header from "./components/Header/Header";
 
 export default function Home() {
   return (
-    <main className="w-[820px] max-md:px-6">
-      <Header />
+    <>
       <Hero />
       <Projects />
       <Portfolio />
       <Footer />
-    </main>
+    </>
   );
 }

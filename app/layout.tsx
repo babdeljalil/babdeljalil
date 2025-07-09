@@ -17,12 +17,12 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     default: "babdeljalil",
-    template: "%s - babdeljalil"
+    template: "%s - babdeljalil",
   },
   description: "babdeljalil frontend developer portfolio",
   twitter: {
-    card: "summary_large_image"
-  }
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({
@@ -35,8 +35,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex justify-center w-[100vw]`}
       >
-        <Header />
-        <main className="w-[820px] max-md:px-6">{children}</main>
+        <main className="w-[820px] max-md:px-6">
+          <Header />
+          {children}
+        </main>
         <KoFiWidget />
       </body>
     </html>

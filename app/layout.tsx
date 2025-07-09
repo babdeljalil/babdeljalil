@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     template: "%s - babdeljalil"
   },
   description: "babdeljalil frontend developer portfolio",
+  twitter: {
+    card: "summary_large_image"
+  }
 };
 
 export default function RootLayout({

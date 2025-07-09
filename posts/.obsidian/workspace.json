@@ -62,9 +62,23 @@
               "icon": "lucide-file",
               "title": "file-md"
             }
+          },
+          {
+            "id": "0c6e6a3543130a51",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "file-md.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "file-md"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -211,13 +225,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ed2c8953f77c0088",
+  "active": "0c6e6a3543130a51",
   "lastOpenFiles": [
-    "just-a-blog.md",
-    "file-md.md",
     "just-another-test.md",
+    "my-first-blog.md",
+    "another-one.md",
+    "file-md.md",
+    "another-test.md",
+    "just-a-blog.md",
     "file.md",
-    "Templates/frontmatter.md",
-    "my-first-blog.md"
+    "Templates/frontmatter.md"
   ]
 }

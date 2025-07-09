@@ -11,6 +11,7 @@ export type PostMeta = {
   title: string;
   date: string;
   tags?: string[];
+  icon: string;
 };
 
 export function getSortedPostsData(): PostMeta[] {
@@ -28,6 +29,7 @@ export function getSortedPostsData(): PostMeta[] {
       return {
         slug,
         title: matterResult.data.title,
+        icon: matterResult.data.icon,
         date: matterResult.data.date,
         tags: matterResult.data.tags || [],
       };
@@ -59,6 +61,6 @@ export async function getPostData(slug: string) {
   return {
     slug,
     contentHtml,
-    ...(matterResult.data as { title: string; date: string }),
+    ...(matterResult.data as { title: string; date: string; icon: string }),
   };
 }

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import KoFiWidget from "./KoFiWidget";
-import Header from "./components/Header/Header";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,7 +36,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex justify-center w-[100vw]`}
       >
         <main className="w-[820px] max-md:px-6">
-          <Header />
+
           {children}
         </main>
         <KoFiWidget />

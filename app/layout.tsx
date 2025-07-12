@@ -21,8 +21,7 @@ export const metadata: Metadata = {
   },
   description,
 
-  keywords:
-    "frontend developer portfolio, web developer portfolio, JavaScript developer, HTML CSS JS projects, UI/UX designer, personal developer portfolio, front-end web developer, responsive web design, modern web projects, coding portfolio website, web development blog, learn web development, frontend tutorials, crypto for developers, blockchain development basics, productivity tips for developers, developer productivity hacks, software developer blog, how to become a frontend developer, best frontend projects for portfolio, building responsive websites, frontend developer blog ideas, crypto trends for developers, productivity tools for coders, coding tips for beginners",
+  keywords: "babdeljalil, berhil, abdeljalil, abdeljalil berhil",
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL!),
   openGraph: {
     type: "website",

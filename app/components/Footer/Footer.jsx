@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -9,9 +10,12 @@ export default function Footer() {
           <div className="font-nunito font-bold text-lg my-0.5 border-b-2 w-fit">
             Home
           </div>
-          <div className="font-nunito font-bold text-lg my-0.5 border-b-2 w-fit">
+          <Link
+            href="/blogs"
+            className="font-nunito font-bold text-lg my-0.5 border-b-2 w-fit"
+          >
             Blog
-          </div>
+          </Link>
           <div className="font-nunito font-bold text-lg my-0.5 border-b-2 w-fit">
             Projects
           </div>
@@ -21,9 +25,8 @@ export default function Footer() {
         </div>
         <div className="flex flex-col justify-between">
           <p className="w-[70%] text-lg font-bold max-md:my-6">
-            Hi, I’m Berhil Abdeljalil, a frontend developer. I
-            make symphonies out of sneezing dust particles in the space between
-            your blinks.
+            Hi, I’m Berhil Abdeljalil, a frontend developer. I make symphonies
+            out of sneezing dust particles in the space between your blinks.
           </p>{" "}
           <div className="w-full flex justify-end">
             <div className="flex items-center">

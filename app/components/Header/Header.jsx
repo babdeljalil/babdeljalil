@@ -1,4 +1,5 @@
 import React from "react";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
   return (
@@ -10,7 +11,7 @@ export default function Header() {
         <span className="mx-1.5 border-b-2">Links</span>
       </nav>
       <div>
-        <div className="rounded-full h-5 w-5 bg-black"></div>
+        <ThemeToggle />
       </div>
     </header>
   );

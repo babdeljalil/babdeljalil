@@ -7,19 +7,17 @@ export default function Footer() {
     <footer className="w-full mt-28 mb-16 justify-between flex flex-col px-6">
       <div className="w-full justify-between flex border-b-2 pb-4 max-md:flex-col">
         <div className="flex flex-col h-full mr-7">
-          <div className="font-nunito font-bold text-lg my-0.5 border-b-2 w-fit">
-            Home
-          </div>
+          <div className="font-bold text-lg my-0.5 border-b-2 w-fit">Home</div>
           <Link
             href="/blogs"
-            className="font-nunito font-bold text-lg my-0.5 border-b-2 w-fit"
+            className="font-bold text-lg my-0.5 border-b-2 w-fit"
           >
             Blog
           </Link>
-          <div className="font-nunito font-bold text-lg my-0.5 border-b-2 w-fit">
+          <div className="font-bold text-lg my-0.5 border-b-2 w-fit">
             Projects
           </div>
-          <div className="font-nunito font-bold text-lg my-0.5 border-b-2 w-fit">
+          <div className="font-bold text-lg my-0.5 border-b-2 w-fit">
             Portfolio
           </div>
         </div>

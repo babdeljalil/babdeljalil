@@ -59,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex justify-center w-[100vw]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex justify-center w-[100vw] transition-all duration-1000`}
       >
         <main className="w-[820px] max-md:px-6">{children}</main>
         <KoFiWidget />

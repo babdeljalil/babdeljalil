@@ -6,15 +6,15 @@ export default function Hero() {
   return (
     <section className="flex max-md:flex-col w-full py-20">
       <div className="w-1/2 max-md:w-full flex flex-col justify-center items-center">
-        <h1 className="text-start w-full my-3 text-4xl font-bagel">
+        <h1 className="text-start w-full my-3 text-4xl font-bold">
           front-end developer
         </h1>
-        <p className="text-start w-full my-3 font-comingsoon">
-          Hi, I’m Berhil Abdeljalil, an frontend developer. I
-          make website for living.
+        <p className="text-start w-full my-3 font-comingsoon text-ring">
+          Hi, I’m Berhil Abdeljalil, an frontend developer. I make website for
+          living.
         </p>
-        <div className="font-nunito font-bold">
-          github | ig | linkedin | blog | projects | portfolio
+        <div className="font-nunito font-bold text-lg">
+          github | ig | linkedin | blog | X
         </div>
       </div>
       <div className="w-1/2 max-md:w-full px-16 max-md:py-10 max-md:px-6">

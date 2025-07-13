@@ -1,9 +1,9 @@
 ---
-title: "welcome Blog Post"
+title: "My First Blog"
 date: "2025-07-13"
 tags:
-  - javascript
-  - react
+  - nextjs
+  - vuejs
 ---
 
 # Hello!

@@ -1,8 +1,8 @@
 ---
-title: "welcome Blog Post"
+title: "just a blog"
 date: "2025-07-13"
 tags:
-  - javascript
+  - nextjs
   - react
 ---
 

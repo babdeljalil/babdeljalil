@@ -1,0 +1,48 @@
+@font-face {
+  font-family: Bricolage;
+  src: url("./static/BricolageGrotesque-Regular.ttf");
+  font-weight: 400; /* normal */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bricolage;
+  src: url("./static/BricolageGrotesque-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bricolage;
+  src: url("./static/BricolageGrotesque-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bricolage;
+  src: url("./static/BricolageGrotesque-ExtraLight.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bricolage;
+  src: url("./static/BricolageGrotesque-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bricolage;
+  src: url("./static/BricolageGrotesque-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bricolage;
+  src: url("./static/BricolageGrotesque-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}

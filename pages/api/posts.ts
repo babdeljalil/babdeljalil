@@ -9,6 +9,7 @@ type Post = {
   title: string;
   date: string;
   tags?: string[];
+  icon?: string;
 };
 
 export default function handler(
@@ -27,6 +28,7 @@ export default function handler(
       title: data.title,
       date: data.date,
       tags: data.tags ?? [],
+      icon: data.icon ?? "📝",
     };
   });
 

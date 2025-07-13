@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useState, useMemo, useEffect } from "react";
 import { Input } from "@/components/ui/input";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 import * as React from "react";
 import {
@@ -20,12 +22,33 @@ type Post = {
   title: string;
   date: string;
   tags?: string[];
+  icon?: string;
 };
 
 export default function BlogPage() {
   const [posts, setPosts] = useState<Post[]>([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTag, setSelectedTag] = useState("");
+
+  const tagColors = [
+    "bg-red-200 text-red-800",
+    "bg-green-200 text-green-800",
+    "bg-blue-200 text-blue-800",
+    "bg-yellow-200 text-yellow-800",
+    "bg-purple-200 text-purple-800",
+    "bg-pink-200 text-pink-800",
+    "bg-indigo-200 text-indigo-800",
+    "bg-teal-200 text-teal-800",
+  ];
+
+  function getColorClass(tag: string) {
+    let hash = 0;
+    for (let i = 0; i < tag.length; i++) {
+      hash = tag.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    const index = Math.abs(hash) % tagColors.length;
+    return tagColors[index];
+  }
 
   // Load posts once on mount (client side)
   useEffect(() => {
@@ -101,21 +124,34 @@ export default function BlogPage() {
       <ul className="space-y-6 mt-5">
         {filteredPosts.length === 0 && <p>No posts found.</p>}
 
-        {filteredPosts.map(({ slug, title, date, tags }) => (
-          <li key={slug}>
-            <Link href={`/blog/${slug}`}>{title}</Link>
-            <p className="text-sm text-gray-500 mb-1">{date}</p>
-            <div className="flex flex-wrap gap-2">
-              {tags?.map((tag) => (
-                <span
-                  key={tag}
-                  className="text-xs bg-blue-100 text-blue-700 rounded-full px-3 py-1"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </li>
+        {filteredPosts.map(({ slug, title, date, tags, icon }) => (
+          <ul className="space-y-4">
+            {filteredPosts.map(({ slug, title, date, tags, icon }) => (
+              <Card key={slug}>
+                <CardContent className="pt-6">
+                  <Link
+                    href={`/blog/${slug}`}
+                    className="text-2xl font-semibold flex items-center gap-2 hover:underline"
+                  >
+                    <span className="text-3xl">{icon ?? "📝"}</span>
+                    <span>{title}</span>
+                  </Link>
+                  <p className="text-sm text-muted-foreground mt-1">{date}</p>
+
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {tags?.map((tag) => (
+                      <Badge
+                        key={tag}
+                        className={getColorClass(tag)} // optional, if you want colored badges
+                      >
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </ul>
         ))}
       </ul>
     </main>

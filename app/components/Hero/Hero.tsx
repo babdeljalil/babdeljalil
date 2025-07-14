@@ -14,19 +14,19 @@ export default function Hero() {
           living.
         </p>
         <div className="font-nunito font-bold text-lg">
-          <a href="" target="_blank">
+          <a href="https://github.com/babdeljalil17" target="_blank">
             github
           </a>{" "}
           |{" "}
-          <a href="" target="_blank">
+          <a href="https://instgram.com/babdeljalil.my" target="_blank">
             ig
           </a>{" "}
           |{" "}
-          <a href="" target="_blank">
+          <a href="https://linkedin.com/babdeljalil" target="_blank">
             linkedin
           </a>{" "}
           | <Link href="/blog">blog</Link> |{" "}
-          <a href="" target="_blank">
+          <a href="https://x.com/babdeljalil17" target="_blank">
             X
           </a>
         </div>

@@ -13,7 +13,7 @@ export default function Hero() {
           Hi, I’m Berhil Abdeljalil, an frontend developer. I make website for
           living.
         </p>
-        <div className="font-nunito font-bold text-lg" id="link">
+        <div className="font-bold text-lg" id="link">
           <a href="https://github.com/babdeljalil17" target="_blank">
             github
           </a>{" "}

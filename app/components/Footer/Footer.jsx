@@ -26,7 +26,7 @@ export default function Footer() {
             Hi, I’m Berhil Abdeljalil, a frontend developer. I make symphonies
             out of sneezing dust particles in the space between your blinks.
           </p>{" "}
-          <div className="w-full flex justify-end">
+          <div className="w-full hidden justify-end dark:flex">
             <div className="flex items-center">
               <a href="https://github.com/babdeljalil" target="_blank">
                 <Image
@@ -61,6 +61,49 @@ export default function Footer() {
               >
                 <Image
                   src="icons/linkedin.svg"
+                  alt=""
+                  width={500}
+                  height={500}
+                  className="h-7 mx-1.5 w-fit"
+                />
+              </a>
+            </div>
+          </div>
+          <div className="w-full flex justify-end dark:hidden">
+            <div className="flex items-center">
+              <a href="https://github.com/babdeljalil" target="_blank">
+                <Image
+                  src="icons/dark/github.svg"
+                  alt=""
+                  width={500}
+                  height={500}
+                  className="h-7 mx-1.5 w-fit"
+                />
+              </a>
+              <a href="https://x.com/babdeljalil17" target="_blank">
+                <Image
+                  src="icons/dark/x.svg"
+                  alt=""
+                  width={500}
+                  height={500}
+                  className="h-7 mx-1.5 w-fit"
+                />
+              </a>
+              <a href="https://instagram.com/babdeljalil.my" target="_blank">
+                <Image
+                  src="icons/dark/instagram.svg"
+                  alt=""
+                  width={500}
+                  height={500}
+                  className="h-7 mx-1.5 w-fit"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/abdeljalil-berhil-302a92367/"
+                target="_blank"
+              >
+                <Image
+                  src="icons/dark/linkedin.svg"
                   alt=""
                   width={500}
                   height={500}

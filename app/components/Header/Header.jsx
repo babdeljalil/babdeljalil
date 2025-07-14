@@ -10,7 +10,7 @@ export default function Header() {
         <span className="mx-1.5 border-b-2">Portfolio</span>
         <span className="mx-1.5 border-b-2">Links</span>
       </nav>
-      <div>
+      <div className="flex justify-center items-center">
         <ThemeToggle />
       </div>
     </header>

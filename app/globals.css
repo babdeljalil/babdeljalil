@@ -9,8 +9,8 @@
 /* @plugin "tailwindAnimate"; */
 
 :root {
-  --primary: oklch(0.21 0.006 285.885);
-  --secondry: #fbfbfb;
+  --primary: oklch(21.033% 0.00588 285.832);
+  --secondry: oklch(98.809% 0.00011 271.152);
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);

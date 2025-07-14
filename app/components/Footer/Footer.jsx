@@ -7,21 +7,21 @@ export default function Footer() {
     <footer className="w-full mt-16 mb-16 justify-between flex flex-col px-6">
       <div className="w-full justify-between flex border-b-2 pb-4 max-md:flex-col">
         <div className="flex flex-col h-full mr-7">
-          <div className="font-bold text-lg my-0.5 border-b-2 w-fit">
-            <a href="#hero">Home</a>
-          </div>
+          {/* <div className="font-bold text-lg my-0.5 border-b-2 w-fit">
+            <a href="#home">Home</a>
+          </div> */}
           <Link
             href="/blogs"
             className="font-bold text-lg my-0.5 border-b-2 w-fit"
           >
             Blog
           </Link>
-          <div className="font-bold text-lg my-0.5 border-b-2 w-fit">
+          {/* <div className="font-bold text-lg my-0.5 border-b-2 w-fit">
             Projects
           </div>
           <div className="font-bold text-lg my-0.5 border-b-2 w-fit">
             Portfolio
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-col justify-between">
           <p className="w-[70%] text-lg font-bold max-md:my-6">

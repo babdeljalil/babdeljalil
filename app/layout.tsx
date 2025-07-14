@@ -57,11 +57,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex justify-center w-[100vw] transition-all duration-1000`}
       >
         <main className="w-[820px] max-md:px-6">{children}</main>
+
         <KoFiWidget />
       </body>
     </html>

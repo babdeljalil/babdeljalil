@@ -25,10 +25,13 @@ export default async function BlogPost({ params }: PageProps) {
   const contentHtml = processedContent.toString();
 
   return (
-    <article className="prose prose-lg mx-auto py-8 px-4">
-      <h1 className="text-4xl font-bold mb-2">{data.title}</h1>
-      <p className="text-gray-500 mb-6">{data.date}</p>
-      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    <article className="prose prose-lg mx-auto py-8 px-4 text-primary">
+      <h1 className="text-4xl font-bold mb-2 text-primary">{data.title}</h1>
+      <p className="text-foreground mb-6">{data.date}</p>
+      <div
+        dangerouslySetInnerHTML={{ __html: contentHtml }}
+        className="text-primary"
+      />
     </article>
   );
 }

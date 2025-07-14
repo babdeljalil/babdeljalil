@@ -7,6 +7,6 @@ tags:
 icon: "⚛️"
 ---
 
-# Learn React Hooks
+<span># Learn React Hooks</span>
 
 React hooks are...

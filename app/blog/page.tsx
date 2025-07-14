@@ -105,23 +105,25 @@ export default function BlogPage() {
             key={slug}
             className="transition-all duration-200 hover:shadow-lg hover:scale-[1.01] hover:border-primary"
           >
-            <CardContent className="pt-6">
+            <CardContent>
               <Link
                 href={`/blog/${slug}`}
-                className="text-2xl font-semibold flex items-center gap-2 hover:underline"
+                className="text-xl font-semibold flex items-center gap-2 hover:underline"
               >
-                <span className="text-3xl">{icon ?? "📝"}</span>
-                <span>{title}</span>
-              </Link>
-              <p className="text-sm text-muted-foreground mt-1">{date}</p>
+                <span className="text-4xl mr-6">{icon ?? "📝"}</span>
+                <div>
+                  <span>{title}</span>
+                  <p className="text-sm text-muted-foreground mt-1">{date}</p>
 
-              <div className="flex flex-wrap gap-2 mt-2">
-                {tags?.map((tag) => (
-                  <Badge key={tag} className={getColorClass(tag)}>
-                    {tag}
-                  </Badge>
-                ))}
-              </div>
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {tags?.map((tag) => (
+                      <Badge key={tag} className={getColorClass(tag)}>
+                        {tag}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              </Link>
             </CardContent>
           </Card>
         ))}

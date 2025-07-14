@@ -4,10 +4,12 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full mt-28 mb-16 justify-between flex flex-col px-6">
+    <footer className="w-full mt-16 mb-16 justify-between flex flex-col px-6">
       <div className="w-full justify-between flex border-b-2 pb-4 max-md:flex-col">
         <div className="flex flex-col h-full mr-7">
-          <div className="font-bold text-lg my-0.5 border-b-2 w-fit">Home</div>
+          <div className="font-bold text-lg my-0.5 border-b-2 w-fit">
+            <a href="#hero">Home</a>
+          </div>
           <Link
             href="/blogs"
             className="font-bold text-lg my-0.5 border-b-2 w-fit"

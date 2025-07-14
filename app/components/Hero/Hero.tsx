@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 import profile from "../../../public/babdeljalil-profile.jpeg";
 
 export default function Hero() {
@@ -14,7 +14,21 @@ export default function Hero() {
           living.
         </p>
         <div className="font-nunito font-bold text-lg">
-          github | ig | linkedin | blog | X
+          <a href="" target="_blank">
+            github
+          </a>{" "}
+          |{" "}
+          <a href="" target="_blank">
+            ig
+          </a>{" "}
+          |{" "}
+          <a href="" target="_blank">
+            linkedin
+          </a>{" "}
+          | <Link href="/blog">blog</Link> |{" "}
+          <a href="" target="_blank">
+            X
+          </a>
         </div>
       </div>
       <div className="w-1/2 max-md:w-full px-16 max-md:py-10 max-md:px-6">

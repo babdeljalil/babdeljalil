@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
 import { title, description } from "@/lib/constants";
+
+import KoFiWidget from "./KoFiWidget";
 
 export const metadata: Metadata = {
   title: {
@@ -51,6 +52,7 @@ export default function RootLayout({
         className={`antialiased flex justify-center w-[100vw] transition-all duration-1000`}
       >
         <main className="w-[820px] max-md:px-6">{children}</main>
+        <KoFiWidget />
       </body>
     </html>
   );
